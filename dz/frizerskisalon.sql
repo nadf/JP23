@@ -1,4 +1,8 @@
-#1. Frizerski salon
+# 1. Frizerski salon
+# U frizerskom salonu radi više djelatnica. 
+# Jedna djelatnica radi s više korisnika. 
+# Korisnik tijekom jednog posjeta koristi jednu uslugu.
+
 # win+r, upisi cmd te zalijepi sljedecu liniju (prilagoditi putanje - diskove)
 # c:\xampp\mysql\bin\mysql -uedunova -pedunova < e:\frizerskisalon.sql
 drop database if exists frizerskisalon;
