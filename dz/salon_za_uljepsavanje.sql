@@ -1,4 +1,8 @@
-#2. Salon za uljepšavanje
+# 2. Salon za uljepšavanje
+# U salonu za uljepšavanje radi više djelatnica. 
+# Jedna djelatnica na dan radi s više korisnika. 
+# Korisnik tijekom jednog posjeta koristi jednu uslugu.
+
 # win+r, upisi cmd te zalijepi sljedecu liniju (prilagoditi putanje - diskove)
 # c:\xampp\mysql\bin\mysql -uedunova -pedunova < e:\salon_za_uljepsavanje.sql
 drop database if exists salon_za_uljepsavanje;
