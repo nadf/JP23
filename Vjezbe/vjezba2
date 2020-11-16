@@ -1,0 +1,27 @@
+drop database if exists vjezba2;
+create database vjezba2 CHARACTER SET utf8;
+
+use vjezba2;
+
+create table prva(
+		sifra int not null primary key auto_increment,
+		naziv varchar(50) not null,
+		cijena decimal(18,2)
+	);
+	
+create table druga(
+		sifra int not null primary key auto_increment,
+		naziv varchar(50) not null,
+		lokacija varchar(50)
+	);
+	
+
+insert into prva (sifra,naziv,cijena)
+values (null,'naziv1',10.99),
+		(null,'naziv2',11.99);
+		
+insert into druga (sifra,naziv,lokacija)
+values (null,'naziv3','lokacija1'),
+		(null,'naziv4','lokacija2'),
+		(null,'naziv5','lokacija3'),
+		(null,'naziv6','lokacija4');
