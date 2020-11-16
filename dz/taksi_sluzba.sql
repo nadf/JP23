@@ -22,13 +22,15 @@ create table vozac(
 	sifra int primary key not null auto_increment,
 	ime varchar(50) not null,
 	prezime varchar(50) not null,
-    iban varchar(50), 
+    iban varchar(50) not null,
 	vozacka char(8) not null
 );
 
 create table voznja(
 	sifra int primary key not null auto_increment,
-    trajanje varchar(50),
+    trajanje varchar(50) not null,
+	polaziste varchar(50) not null,
+	odrediste varchar(50) not null,
     cijena decimal(18,2),
 	vozilo int not null
 );
