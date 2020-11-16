@@ -1,4 +1,9 @@
-# 4. Dijecji Vrtic
+# 4. Djecji Vrtic
+# U dječjem vrtiću postoji više odgojnih skupina. 
+# Svaka odgojna skupina ima više djece
+# i vodi ih jedna odgajateljica. 
+# Odgajateljica ima jednu stručnu spremu.
+
 # win+r, upisi cmd te zalijepi sljedecu liniju (prilagoditi putanje - diskove)
 # c:\xampp\mysql\bin\mysql -uedunova -pedunova < e:\djecji_vrtic.sql
 drop database if exists djecji_vrtic;
