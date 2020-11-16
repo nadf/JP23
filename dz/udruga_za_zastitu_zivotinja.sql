@@ -1,4 +1,9 @@
 # 3. Udruga za zastitu zivotinja
+# U udruzi radi više osoba. 
+# Jedna osoba se brine za jednog ili više štićenika udruge.
+# Štićenici udruge su životinje. 
+# Svaki štićenik se nalazi u jednom prostoru.
+
 # win+r, upisi cmd te zalijepi sljedecu liniju (prilagoditi putanje - diskove)
 # c:\xampp\mysql\bin\mysql -uedunova -pedunova < e:\udruga_za_zastitu_zivotinja.sql
 drop database if exists udruga_za_zastitu_zivotinja;
