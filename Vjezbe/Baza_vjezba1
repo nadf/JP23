@@ -1,0 +1,27 @@
+drop database if exists baza_vjezba1;
+create database baza_vjezba1 character set utf8;
+
+use baza_vjezba1;
+
+create table automobil(
+    sifra        int not null primary key auto_increment,
+    boja		 varchar(50) not null,
+    naziv        varchar(50) not null,
+    cijena       decimal(18,2),
+    godiste      varchar(50) not null
+);
+
+insert into automobil (sifra,boja,naziv,cijena,godiste)
+values (1,'boja1','naziv1',100000.45,'2004'),
+(2,'boja2','naziv2',110000.45,'2005'),
+(3,'boja3','naziv3',120000.34,'2005'),
+(4,'boja4','naziv4',130000.31,'2004'),
+(5,'boja5','naziv5',140000.21,'2010');
+
+select * from automobil;
+
+update automobil set boja='crna' where sifra=1;
+
+update automobil set godiste=2001 where sifra=3;
+
+delete from automobil where sifra=4;
