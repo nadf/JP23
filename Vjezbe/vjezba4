@@ -1,0 +1,26 @@
+# baza mjesta
+# odaberite sva mjesta iz osjecko-baranjske zupanije
+select * from mjesto;
+select * from mjesto where zupanija=14;
+
+# odaberite sva mjesta u hrvatskoj koja ne zavrsavaju sa slovom k
+select * from mjesto where naziv not like '%k';
+
+insert into smjer (postanski broj,zupanija,naziv)
+values ('10001',22,Naziv1);
+		('10002',22,Naziv2);
+		('10003',22,Naziv3);
+		
+# nazive svih mjesta koji imaju pocetno slovo a postavite na xxxx
+
+select * from mjesto where naziv like 'a%';
+update mjesto set naziv='XXXX' where postanskibroj ='21246';
+update mjesto set naziv='XXXX' where postanskibroj ='31205';
+update mjesto set naziv='XXXX' where postanskibroj ='31216';
+
+# mjestima dodati kolonu brojstanovnika i u nju postaviti slucajne vrijednosti
+# između 10000 i 100000
+
+select * from mjesto;
+alter table mjesto add column brojstanovnika int;
+update mjesto set brojstanovnika=10000 + (rand()*990000);
