@@ -1,0 +1,13 @@
+# Baza World
+# odaberite imena gradova u europi
+select b.Name, a.continent
+from country a
+inner join city b on a.code=b.CountryCode
+where a.Continent = 'Europe';
+
+select continent from country;
+# odaberite nazive zemalja u kojima se priča španjolski jezik 
+select c.Name
+from country c
+inner join countrylanguage cl on c.Code=cl.CountryCode
+where cl.`Language` = 'Spanish';
