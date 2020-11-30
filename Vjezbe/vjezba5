@@ -1,0 +1,22 @@
+# 1. zadatak
+# odaberite sve naslove knjige koje su napisali autori rodeni 1980 godine
+select a.naslov
+from katalog a
+inner join autor b on a.autor=b.sifra
+where b.datumrodenja between '1980-01-01' and '1980-12-31';
+
+# 2. zadatak
+# odaberite sve naslove koji su izadni od strane aktivnih izdavaca
+select a.naslov
+from katalog a
+inner join izdavac b on a.izdavac=b.sifra
+where b.aktivan=true;
+
+select * from izdavac;
+
+# 3. zadatak
+# odaberite imena i prezimena autora koji su pisali knjige na ljubavnu tematiku
+select a.ime, a.prezime
+from autor a
+inner join katalog b on b.autor=a.sifra
+where naslov like '%ljubav%';
